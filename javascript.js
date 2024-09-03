@@ -35,7 +35,7 @@ function nimenTarkistus(){
 }
 
 function salasananTarkistus(){
-    let erikoisMerkit = /[!@£$€&%#]/;
+    let erikoisMerkit = /[!@£$€&%#?=+]/;
     const salasana = document.getElementById('salasanaKentta').value;
     if (salasana.length > 5){
         if (erikoisMerkit.test(salasana)){
